@@ -34,8 +34,13 @@ Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kag
 * scikit-learn
 * plotly
 
-## Data
-Data come from [https://grouplens.org/datasets/movielens/](https://grouplens.org/datasets/movielens/). I used <i>100K</i> movie ratings dataset from <i>2018</i> year.
+
+## Content
+* <i>requirements.txt</i> - file with all required packages
+* <i>Analitics</i> - folder contains all files related to analitics part of application like datasets, notebook with preprocessing data,  EDTA and modeling
+* <i>ML_App</i> - folder contains web app files
+* <i>Images</i> - folder contains screenshots and chars to create Readme
+
 
 ## Scope of work
 * Create RDD of movie similarities
@@ -47,11 +52,22 @@ Data come from [https://grouplens.org/datasets/movielens/](https://grouplens.org
 * Discuss the results
 * Create a Movie Recommendation System Console Application 
 
-## Content
-* <i>Movie_Recommendation_System_Notebook.ipynb</i> - notebook with calculations and descriptions
-* <i>Movie_Recommendation_System_Notebook.py</i> - console application to run in the terminal
-* <i>MoviePairSimilarities</i> - folder contains serialized movie pair similarities RDD
-* <i>movieNameDict.pickle</i> - serialized lookup table of movie names
-* <i>movieList.pickle</i> - serialized list of avaiable movie to rate in console application
-* <i>extract_available_movies.py</i> - script to create list of available movies to rate
-* <i>ml-latest-small</i> - folder contains datasets
+
+## How to run application
+- <i>Download repository</i>: git clone https://github.com/Cyki89/Rest_Api.git
+- <i>Create new virtual enviroment</i>: mkvirtualenv --python=/usr/bin/python3.7 virtualenv_name
+- <i>Install dependecies</i>: pip install -r requirements.txt
+- <i>Go to main application folder</i>: cd ML_App
+- <i>Run server on your local machine</i>: python manage.py runserver
+- <i>Open localhost in your browser</i>: https://127.0.0.1:8000. You should look Main Browable api view like this:
+
+- <i>Go to 'users_router'</i>: http://127.0.0.1:8000/api/users/
+- <i>Register new user</i>: http://127.0.0.1:8000/api/users/register/ or use <i>TestUser</i> account with password: <i>test1234</i>
+- <i>Go to login view</i>: http://127.0.0.1:8000/api/users/login/. You can copy token to use token authentication in future steps
+- <i>Go to 'requests_router</i>: http://127.0.0.1:8000/api/requests/
+- <i>Create request</i>: http://127.0.0.1:8000/api/requests/create/. You have to be loged in or pass valid token in headers to make a request
+- <i>Fill request form and click POST button</i>:
+- <i>See prediction</i>: You should see output in html form:
+
+
+Then you can change the request parameters, make another request, see a list of all requests or filter the results you are interested in
