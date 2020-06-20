@@ -53,7 +53,7 @@ Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kag
 * Create a Movie Recommendation System Console Application 
 
 
-## How to run application
+## How to run application(using browsable api)
 - <i>Download repository</i>: git clone https://github.com/Cyki89/Rest_Api.git
 - <i>Create new virtual enviroment</i>: mkvirtualenv --python=/usr/bin/python3.7 virtualenv_name
 - <i>Install dependecies</i>: pip install -r requirements.txt
@@ -67,7 +67,7 @@ Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kag
 - <i>Go to 'requests_router</i>: http://127.0.0.1:8000/api/requests/
 - <i>Create request</i>: http://127.0.0.1:8000/api/requests/create/. You have to be loged in or pass valid token in headers to make a request
 - <i>Fill request form and click POST button</i>:
-- <i>See prediction</i>: You should see output in html form:
+- <i>See prediction</i>: You should receive response in JSON Format:
 
 
 Then you can change the request parameters, make another request, see a list of all requests or filter the results you are interested in
