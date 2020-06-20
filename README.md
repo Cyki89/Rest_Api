@@ -18,7 +18,6 @@ I trained several ML models (with tuning hyperparameters) and placed them on a w
 - RandomForestRegressor
 - GradientBoostingRegressor
 ![Screenshot](Images/Models_results.png)
-
 ## Data
 Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kaggle.com/andrewmvd/udemy-courses/). Dataset cointains 3600+ Udemy Course come from 4 categories:
 - Business Finance
@@ -45,7 +44,7 @@ Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kag
 * <i>Images</i> - folder contains screenshots and chars to create Readme.
 
 
-## How to run application 
+## How to run application(using browsable api)
 - <i>Download repository</i>. git clone https://github.com/Cyki89/Rest_Api.git.
 - <i>Create new virtual enviroment</i>. mkvirtualenv --python=/usr/bin/python3.7 virtualenv_name.
 - <i>Install dependecies</i>. pip install -r requirements.txt.
