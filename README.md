@@ -1,4 +1,4 @@
-# Udemy_Courses_Rest_Api
+# ML_Service_Rest_Api
 
 
 ## Overview
@@ -18,7 +18,7 @@ I trained several ML models (with tuning hyperparameters) and placed them on a w
 - RandomForestRegressor
 - GradientBoostingRegressor
 ![Screenshot](Images/Models_results.png)
-## Data
+## Training Data
 Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kaggle.com/andrewmvd/udemy-courses/). Dataset cointains 3600+ Udemy Course come from 4 categories:
 - Business Finance
 - Graphic Design 
