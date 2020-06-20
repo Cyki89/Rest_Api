@@ -19,7 +19,6 @@ I trained several ML models (with tuning hyperparameters) and placed them on a w
 - GradientBoostingRegressor
 ![Screenshot](Images/Models_results.png)
 
-
 ## Data
 Data come from [https://www.kaggle.com/andrewmvd/udemy-courses/](https://www.kaggle.com/andrewmvd/udemy-courses/). Dataset cointains 3600+ Udemy Course come from 4 categories:
 - Business Finance
