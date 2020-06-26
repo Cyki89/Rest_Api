@@ -2,9 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-'''
-TODO - Need to change this shit
-'''
+
 from Prediction_Pipeline.prediction_pipeline import DataFrameSelector, title_analyzer
 
 def main():

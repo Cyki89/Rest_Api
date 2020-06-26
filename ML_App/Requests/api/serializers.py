@@ -40,20 +40,26 @@ class RequestCreateUpdateSerializer(ModelSerializer):
 		MIN_PRICE, MAX_PRICE = 20, 200
 		MIN_CONTENT_DURATION = 1
 		MIN_NUM_LECTURES = 1
+		MIN_DAYS = 1
 
 		if input_data['price'] < MIN_PRICE or input_data['price'] > MAX_PRICE:
 			raise ValidationError(
-				{"response": f"Course Price has to be in range {MIN_PRICE}-{MAX_PRICE}$ (Udemy Limits)"}
+				{"response": f"course price has to be in range {MIN_PRICE}-{MAX_PRICE}$ (Udemy Limits)"}
 			)
 
 		if input_data['content_duration'] < MIN_CONTENT_DURATION:
 			raise ValidationError(
-				{"response": f"Course should be at least {MIN_CONTENT_DURATION} hour long"}
+				{"response": f"course should be at least {MIN_CONTENT_DURATION} hour long"}
 			)
 
-		if input_data['num_lectures'] < MIN_CONTENT_DURATION:
+		if input_data['num_lectures'] < MIN_NUM_LECTURES:
 			raise ValidationError(
-				{"response": f"Course should have at least {MIN_NUM_LECTURES} lecture"}
+				{"response": f"course should have at least {MIN_NUM_LECTURES} lecture"}
+			)
+
+		if input_data['days'] < MIN_DAYS:
+			raise ValidationError(
+				{"response": f"number of days can't be smaller than {MIN_DAYS}"}
 			)
 
 		input_data['course_title'] = input_data['course_title'].lower()
